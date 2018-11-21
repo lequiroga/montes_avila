@@ -1,0 +1,551 @@
+/*
+Design by http://www.bluewebtemplates.com
+Released for free under a Creative Commons Attribution 3.0 License
+*/
+@charset "utf-8";
+
+html, .main { padding:0; margin:0; background-color:#C0C0C0;}
+.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+h1 { margin:0; padding:29px 0; color:#fff; font:normal 40px/1.2em Arial, Helvetica, sans-serif;}
+h1 a, h1 a:hover { color:#fff; text-decoration:none;}
+h1 span { color:#007236;}
+h1 small { padding-left:38px; font:normal 13px/1.2em Arial, Helvetica, sans-serif;}
+//h2 { font:bold 24px Arial, Helvetica, sans-serif; color:#323a3f; padding:8px 0; margin:8px 0;}
+p { margin:8px 0; padding:0 0 8px 0; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
+a { color:#483d8b; text-decoration:none;}
+
+.header, .hbg, .content, .fbg, .footer { margin:0; padding:0;}
+.hbg_resize, .content_resize, .fbg_resize { background-color:#C0C0C0; margin:0 auto; padding:24px 40px; width:90%; /*-moz-border-radius:10px;*/}
+
+/* header */
+.header { background:url(../images/header_bg.gif) repeat-x top;}
+.header_resize { margin:0 auto; padding:0; width:900px;}
+.header .logo { width:auto; }
+.header .menu ul { margin:1px 0 0 0; padding:0; float:right; width:auto; list-style:none;}
+.header .menu ul li { margin:0; float:left;}
+.header .menu ul li a { margin:0; padding:12px 10px; color:#5f5f5f; text-decoration:none; line-height:36px;}
+.header .menu ul li a span { margin:0; padding:12px 0 12px 10px;}
+.header .menu ul li a:hover, .header .menu ul li.active a { color:#fff; background:url(../images/menu_r.gif) no-repeat right top;}
+.header .menu ul li a:hover span, .header .menu ul li.active a span { background:url(../images/menu.gif) repeat-x top;}
+
+/* search */
+#formsearch { margin:0; padding:36px 0 0 0;}
+#formsearch span { display:block; margin:7px 0 6px 0; padding:0 8px 0 11px !important; padding:0 4px 0 6px; float:right; width:170px; background:#fff url(images/search.gif) no-repeat top left;}
+#formsearch input.editbox_search { margin:0; padding:6px 0; float:left; width:170px; height:12px; border:none; background:none; font:normal 13px/16px Arial, Helvetica, sans-serif; color:#a8acb2;}
+#formsearch input.button_search { margin:7px 0 0 0; padding:0; border:none; float:right;}
+
+/* hbg */
+.hbg { padding:16px 0;}
+.hbg_resize { padding-right:486px; width:454px;}
+
+/* content */
+.content { padding-bottom:16px;}
+.content .mainbar { margin:0; padding:0; float:left; width:620px;}
+.content .mainbar .article, .content .sidebar .gadget { margin:0; padding:0 0 16px 0;}
+.content .sidebar { margin:0; padding:0; float:right; width:220px;}
+ul.sb_menu, ul.ex_menu { margin:0; padding:0; list-style:none;}
+ul.sb_menu li, ul.ex_menu li { margin:0; padding:0; border-bottom:1px dashed #e9e5e5;}
+ul.ex_menu li { color:#959595;}
+ul.sb_menu li a, ul.ex_menu li a { margin:0; padding-left:24px; color:#5f5f5f; text-decoration:none; background:url(images/li.gif) no-repeat 0 0; line-height:1.8em;}
+ul.sb_menu li a:hover, ul.ex_menu li a:hover { color:#61a203; font-weight:bold; background:url(images/li_active.gif) no-repeat 0 0;}
+ul.sb_menu li { padding:4px 0;}
+ul.ex_menu li { padding:8px 0;}
+ul.sb_menu li a:hover { text-decoration:underline;}
+ul.ex_menu li a:hover { text-decoration:none;}
+
+/* subpages */
+.content .mainbar .comment { margin:0; padding:16px 0 0 0;}
+.content .mainbar .comment img.userpic { border:1px solid #dedede; margin:10px 16px 0 0; padding:0; float:left;}
+
+/* fbg */
+.fbg { margin:0; padding:0;}
+.fbg_resize img { border:1px solid #dedede;}
+.fbg_resize .col { margin:0; float:left;}
+.fbg_resize .c1 { padding:0 16px 0 0; width:290px;}
+.fbg_resize .c2 { padding:0 16px; width:290px;}
+.fbg_resize .c3 { padding:0 0 0 16px; width:240px;}
+.fbg_resize .c1 img { margin:8px 16px 16px 0; padding:0; float:left;}
+.fbg_resize .c3 img { margin:4px; padding:0;}
+
+/* footer */
+.footer { margin:0; padding:0;}
+.footer_resize { margin:0 auto; padding:8px 32px; width:962px;}
+.footer_resize p.lf { float:left; width:auto;}
+ul.fmenu { margin:8px 0; padding:0; list-style:none; float:right; width:auto;}
+ul.fmenu li { margin:0; padding:0 8px; float:left;}
+ul.fmenu li a { color:#5f5f5f; text-decoration:none;}
+ul.fmenu li a:hover, ul.fmenu li.active a { color:#61a203;}
+ul.fmenu li a:hover { text-decoration:underline;}
+
+/* form */
+form { margin:0; padding:0;}
+ol { margin:0; padding:0; list-style:none;}
+ol li { margin:0; padding:0; display:block; clear:both;}
+ol li label { display:block; margin:0; padding:16px 0 0 0;}
+ol li input.text { width:480px; border:1px solid #c0c0c0; margin:2px 0; padding:5px 2px; height:16px; background:#fff;}
+ol li textarea { width:480px; border:1px solid #c0c0c0; margin:2px 0; padding:2px; background:#fff;}
+ol li .send { margin:16px 0 0 0;}
+
+#registro {
+
+    width:520px;
+
+    //margin-left:-180px;
+
+    padding:10px;
+
+    margin:15px;
+
+    border: 2px dashed #6B8E23;
+
+    background-color:#6B8E23;  
+
+    top:50%;
+
+    left:50%;
+
+    margin-left:20%;
+
+}
+
+#registro fieldset {
+
+    border:0;
+
+    background-color: #E0FFFF;
+
+    padding:10px 20px;
+
+}
+
+#registro legend {
+
+    font: bold 24px Arial, sans-serif;
+
+    color:#000000;
+
+    padding:0 5px;
+
+    text-align: center;
+
+}
+
+#registro p label {
+
+    font: 16px Geneva, Arial, Helvetica, sans-serif;
+
+    float: left;
+
+    //width: 26%;
+
+    text-align:left;
+
+    padding:5px;
+
+    color: #000000;
+
+}
+
+#registro p select {
+
+    width:474px; 
+
+    float: left;
+
+    font: 16px Geneva, Arial, Helvetica, sans-serif;
+
+    text-align:left;
+
+    padding:2px;
+
+}
+
+#registro p input{
+
+    width:470px; 
+
+    font: 14px Geneva, Arial, Helvetica, sans-serif;
+
+    float: left;
+
+    text-align:left;
+
+    padding:2px;
+
+}
+
+#registro p button {
+
+    font: 14px Geneva, Arial, Helvetica, sans-serif;
+
+    float: center;    	
+
+}
+
+
+
+#registro p br { clear: left; }
+
+#customers
+{
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:100%;
+  border-collapse:collapse;
+}
+
+#customers td, #customers th 
+{
+  font-size:12px;
+  border:1px solid #317082;
+  padding:3px 7px 2px 7px;
+}
+
+#customers th 
+{
+  font-size:14px;
+  text-align:left;
+  padding-top:5px;
+  padding-bottom:4px;
+  background-color:#317082;
+  color:#fff;
+}
+
+#customers tr:hover td 
+{
+  color:#000;
+  background-color:#C0C0C0;
+}
+
+#customers tr.alt:hover td 
+{
+  color:#000;
+  background-color:#C0C0C0;
+}
+
+#customers tr.alt td 
+{
+  color:#000;
+  background-color:#FFF;
+}
+
+
+
+
+/*.enviar { margin:3px 0 0 83px; }*/
+
+
+.custom-radio, .custom-checkbox {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
+/*
+ * Dejar espacio a la 'label' para posicionar el checkbox hecho con pseudoelementos
+ */
+.custom-radio + label, .custom-checkbox + label {
+  position: relative;
+  padding-left: 16px;
+}
+/*
+ * El pseudoelemento que emulará el input
+ */
+.custom-radio + label:before, .custom-checkbox + label:before {
+    content: "";
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    width: 13px;
+    height: 13px;
+    line-height: 11px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6.5px;
+    background: white;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+    background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+    background-image: -moz-linear-gradient(#ffffff, #dddddd);
+    background-image: -o-linear-gradient(#ffffff, #dddddd);
+    background-image: linear-gradient(#ffffff, #dddddd);
+    zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#dddddd);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd')";
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+}
+/*
+ * Fondo para cuando se pasa el ratón por encima
+ */
+.custom-radio + label:hover:before, .custom-checkbox + label:hover:before {
+    background: #fafafa;
+}
+
+/*
+ * Fondo para cuando se está haciendo click
+ * Con filtros para ie9
+ */
+.custom-radio + label:active:before, .custom-checkbox + label:active:before {
+    background: #f2f2f2;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(#dddddd, #ffffff);
+    background-image: -moz-linear-gradient(#dddddd, #ffffff);
+    background-image: -o-linear-gradient(#dddddd, #ffffff);
+    background-image: linear-gradient(#dddddd, #ffffff);
+    zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#dddddd, endColorstr=#ffffff);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#ffffff')";
+}
+
+/*
+ * Redondear el botón "radio"
+ * Sobreescribimos el border-radius: 3px general
+ */
+.custom-radio + label:before {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+/*
+ * Mostrar un punto cuando está seleccionado el "radio"
+ * Usamos box-shadow para simular un fondo gris, mientras que dejamos un pequeño 
+ * espacio para el punto negro (#444), que es el fondo
+ */
+.custom-radio:checked + label:before {
+    background: #444;
+    -webkit-box-shadow: 0 0 0 3px #eeeeee inset;
+    -moz-box-shadow: 0 0 0 3px #eeeeee inset;
+    box-shadow: 0 0 0 3px #eeeeee inset;
+}
+
+/*
+ * Estilos focus para la gente que navega con el teclado, etc
+ */
+.custom-radio:focus + label:before,
+.custom-checkbox:focus + label:before {
+    outline: 1px dotted;
+}
+
+/* Mostrar la "X" cuando está chequeada (sólo el checkbox).
+ * Podríamos usar una fuente de iconos para mostrar un tic
+ */
+.custom-checkbox:checked + label:before {
+    content: "X";
+}
+
+
+/*
+ * Sólo para IE 6, 7 y 8 (no soportado)
+ */
+@media \0screen\,screen\9 {
+    .custom-radio,
+    .custom-checkbox {
+        clip: auto;
+        position: static;
+    }
+
+    .custom-radio + label,
+    .custom-checkbox + label {
+        padding-left: 0;
+    }
+
+    .custom-radio + label:before,
+    .custom-checkbox + label:before {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+html{
+		//height:100%;
+	}
+	body{
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		font-size:0.8em;
+		margin:0px;
+		padding:0px;
+		text-align:center;
+		background-color:#C0C0C0;
+		height:100%;
+	}
+	
+	p{
+		margin-top:5px;
+		margin-bottom:10px;
+	}
+	
+	#mainContainer{
+
+		width:70%;                             
+		margin:0 auto;
+		text-align:left;
+		background-color:#E6E6FA;
+		padding-left:16px;
+		padding-right:16px;
+		padding-bottom:20px;
+                border-width: 1px; border-style: solid; border-color:#317082;
+                	
+	}
+	
+	#dhtmlgoodies_menu img{
+		border:0px;
+	}
+
+	/* End general styles for this example page */
+	/* General configuration CSS */
+	
+	#dhtmlgoodies_menu ul li ul{
+		display:none;	/* Needed to display ok in Opera */
+	}
+		
+	#dhtmlgoodies_menu{
+		visibility:hidden;	
+	}
+	#dhtmlgoodies_menu ul{
+		margin:0px;	/* No indent */
+		padding:0px;	/* No indent */
+	}
+	#dhtmlgoodies_menu li{
+		list-style-type:none;	/* No bullets */
+	}	
+	#dhtmlgoodies_menu a{
+
+		margin:0px;
+		padding:0px;
+	}
+	/* End general configuration CSS */
+	
+	
+	/* Cosmetic */
+	
+	/***********************************************************************
+		CSS - MENU BLOCKS
+	 	General rules for all menu blocks (group of sub items) 
+	***********************************************************************/
+	#dhtmlgoodies_menu ul{
+		border:1px solid #000;
+		background-color:#A9A9A9;
+		padding:1px;
+	}
+		
+	#dhtmlgoodies_menu ul.menuBlock1{	/* Menu bar - main menu items */
+		
+		border:1px solid #317082;
+		background-color:#A9A9A9;
+		//overflow:visible;
+	}
+	#dhtmlgoodies_menu ul.menuBlock2{	/* Menu bar - main menu items */
+		border:0px;
+		padding:1px;
+		border:1px solid #555;
+	}
+	
+	/***********************************************************************
+		CSS - MENU ITEMS
+	 	Here, you could assign rules to the menu items at different depths.
+	***********************************************************************/
+	/* General rules for all menu items */
+	#dhtmlgoodies_menu a{
+		color: #000;
+		text-decoration:none;
+		padding-left:2px;
+		padding-right:2px;
+	
+	}
+	
+	/*
+	Main menu items 
+	*/
+	
+	#dhtmlgoodies_menu .currentDepth1{
+		padding-left:5px;
+		padding-right:5px;
+		//border:1px solid #E2EBED;
+	}
+	#dhtmlgoodies_menu .currentDepth1over{
+		padding-left:5px;
+		padding-right:5px;
+		background-color:#317082;
+		//border:1px solid #000;
+		
+		
+	}
+	#dhtmlgoodies_menu .currentDepth1 a{
+		font-weight:bold;
+	}
+	#dhtmlgoodies_menu .currentDepth1over a{	/* Text rules */
+		color:#FFF;
+		font-weight:bold;
+	}
+	
+	/* Sub menu depth 1 */
+	#dhtmlgoodies_menu .currentDepth2{
+		padding-right:2px;
+		border:1px solid #FFF;
+	}
+	#dhtmlgoodies_menu .currentDepth2over{
+		padding-right:2px;
+		background-color:#E2EBED;
+		border:1px solid #000;
+	}	
+	#dhtmlgoodies_menu .currentDepth2over a{	/* Text rules */
+		color:#000;
+	}	
+	/* Sub menu depth 2 */
+	#dhtmlgoodies_menu .currentDepth3{
+		padding-right:2px;
+		border:1px solid #FFF;
+	}
+	#dhtmlgoodies_menu .currentDepth3over{
+		padding-right:2px;
+		background-color:#EDE3EB;
+		border:1px solid #000;
+	}
+	/* Sub menu depth 3 */
+	#dhtmlgoodies_menu .currentDepth4{
+		padding-right:2px;
+		border:1px solid #FFF;
+	}
+	#dhtmlgoodies_menu .currentDepth4over{
+		padding-right:2px;
+		background-color:#EBEDE3;
+		border:1px solid #000;
+	}	
+
+        .multipleSelectBoxControl span{	/* Labels above select boxes*/
+		font-family:arial;
+		font-size:11px;
+		font-weight:bold;
+	}
+	.multipleSelectBoxControl div select{	/* Select box layout */
+		font-family:arial;
+		height:100%;
+	}
+	.multipleSelectBoxControl input{	/* Small butons */
+		width:25px;	
+	}
+	
+	.multipleSelectBoxControl div{
+		float:left;
+	}
+		
+	.multipleSelectBoxDiv
+	
+

@@ -1,0 +1,22 @@
+<div class="toggle">
+    <div class="tooltip1" style="color:black;width:8em;font-weight:bold;font-family:Verdana;font-size:1em;left:-6em;position:absolute;">Cerrar sesi&oacute;n</div>
+</div>
+<div class="form" >
+    <center><h2>GESTI&Oacute;N CLIENTES</h2></center>
+    <br />
+    <form name="formularioCliente" id="formularioCliente" method="post" action="listaClientes.php">
+      <label>N&uacute;mero identificaci&oacute;n</label><input name="numero_identificacion" type="text" placeholder="N&uacute;mero identificaci&oacute;n"/>
+      <label>Cliente</label><input name="cliente" type="text" placeholder="Cliente"/>
+      <br />
+      <center><button style="width:15em;" type="submit" class="consultar">Consultar</button>
+      <br />
+      <br />  
+      <button style="width:15em;" class="crear_cliente" onclick="ajax_loadContent('formulario','formularioGestionCliente.php?crear=1');return false">Crear cliente</button>
+      <br />
+      <br />
+      <button style="width:15em;" class="volver" onclick="ajax_loadContent('formulario','../menuPrincipal/formularioMenu1.html');return false">Volver</button></center>
+    </form>
+  </div>
+  <div class="cta">Montes Avila Inmobiliaria<br />Sistema de Informaci&oacute;n de Negocios Inmobiliarios<br />
+  <a href="mailto:lequiroga@gmail.com" target="_top">lequiroga@gmail.com</a>
+  </div>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+<head>
+<script type="text/javascript">
+        window.history.forward();
+        function noBack()
+        {
+            window.history.forward();
+        }
+</script>
+  <meta charset="UTF-8">
+  <title>Montes Avila</title>
+  <script type="text/javascript" src="../../js/ajax.js"></script>
+  <script type="text/javascript" src="../../js/ajax-dynamic-content.js"></script>
+  <script type="text/javascript" src="../../js/validarClientes.js"></script>
+  <script type="text/javascript" src="../../js/validarProductos.js"></script>
+  <script type="text/javascript" src="../../js/validarCotizaciones.js"></script>
+  <script type="text/javascript" src="../../js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="../../css/style.css">
+      <link rel="stylesheet" href="../../css/select.css">
+
+</head>
+
+<body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+
+<!-- Form Mixin-->
+<!-- Input Mixin-->
+<!-- Button Mixin-->
+<!-- Pen Title-->
+<div class="pen-title" style="background-color:#1137AD;height:7em;">
+  <img class="responsive" style="width:25em;height:4em;margin-top:2em;" src="../../form-images/montes_avila_banner.png">  
+</div>
+<!-- Form Module-->
+<div class="module form-module" id="formulario">
+  <div class="toggle">
+    <div class="tooltip1" style="color:black;width:8em;font-weight:bold;font-family:Verdana;font-size:1em;left:-6em;position:absolute;">Cerrar sesi&oacute;n</div>    
+  </div>
+  <div class="form" >
+    <center><h2>MEN&Uacute; PRINCIPAL</h2></center>    
+    <br />
+    <form>    	
+      <!--label>Login</label><input name="login" type="text" placeholder="Login"/>
+      <label>Contrase&ntilde;a</label><input name="password" type="password" placeholder="Contrase&ntilde;a"/-->
+      <center>
+        <button class="cotizaciones" style="width:15em;" href="#" onclick="ajax_loadContent('formulario','formularioCotizacion.php');return false">Solicitudes de Compra</button><br /><br />
+        <button class="productos" style="width:15em;" href="#" onclick="ajax_loadContent('formulario','../clientes/formularioCliente.html');return false">Gesti&oacute;n de Clientes</button><br /><br />
+        <button class="cotizaciones" style="width:15em;" href="#" onclick="ajax_loadContent('formulario','formularioProducto.html');return false">Inmuebles</button><br /><br />
+        <button class="productos" style="width:15em;" href="#" onclick="ajax_loadContent('formulario','formularioProducto.html');return false">Clientes Externos</button><br /><br />
+        <button class="cotizaciones" style="width:15em;" href="#" onclick="ajax_loadContent('formulario','formularioProducto.html');return false">Inmuebles Externos</button>
+      </center>
+    </form>
+  </div>
+
+  <div class="cta">Montes Avila Inmobiliaria<br />Sistema de Informaci&oacute;n de Negocios Inmobiliarios<br />
+  <a href="mailto:lequiroga@gmail.com" target="_top">lequiroga@gmail.com</a>
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+    <!--script src="js/index.js"></script-->
+
+</body>
+</html>

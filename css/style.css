@@ -190,12 +190,12 @@ body {
   transition: 0.3s ease;
 }
 
-.cotizaciones,.consultar {background-color: #3498DB;}
+.cotizaciones,.consultar {background-color: #00008B;}
 .cotizaciones:hover{
-  background: #00008B;
+  background: #2471A3;
 }
 .consultar:hover{
-  background: #00008B;
+  background: #2471A3;
 }
 
 .clientes,.crear_cotizacion,.crear_cliente,.crear_producto {background-color: #4CAF50}
